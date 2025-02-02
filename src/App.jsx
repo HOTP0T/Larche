@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Larche">
       <div className="app">
         <Routes>
           <Route path="/" element={

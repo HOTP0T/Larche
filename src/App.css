@@ -6,14 +6,38 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 140px);
   padding: 20px;
+  margin-top: 60px;
+}
+
+.home-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 16px;
+}
+
+.home-logo h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.interaction-buttons {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   position: fixed;
   bottom: 80px;
-  width: 100%;
-  background: var(--gradient-bg);
-  backdrop-filter: blur(8px);
+  padding: 0 20px;
 }
 
 .likes, .share {

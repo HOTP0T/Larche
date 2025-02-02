@@ -35,7 +35,7 @@
   transform: translateY(-2px);
 }
 
-.nav-item img {
+.nav-icon {
   width: 24px;
   height: 24px;
   margin-bottom: 6px;
@@ -43,7 +43,7 @@
   transition: opacity 0.2s ease;
 }
 
-.nav-item:hover img {
+.nav-item:hover .nav-icon {
   opacity: 1;
 }
 

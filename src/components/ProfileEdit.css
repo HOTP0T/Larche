@@ -1,0 +1,67 @@
+.profile-edit {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+.edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.back-button, .save-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.save-button {
+  color: #007AFF;
+}
+
+.edit-form {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #888;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #1c1c1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+}
+
+.avatar-edit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-edit img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.avatar-edit button {
+  background: none;
+  border: none;
+  color: #007AFF;
+  font-size: 16px;
+}

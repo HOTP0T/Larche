@@ -1,0 +1,86 @@
+.journal {
+  background-color: #000;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.journal-header h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.action-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  aspect-ratio: 3/4;
+  position: relative;
+  padding: 10px;
+}
+
+.card-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.card-likes {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+}
+
+.heart {
+  color: black;
+}

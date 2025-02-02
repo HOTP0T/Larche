@@ -1,0 +1,78 @@
+.discover {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 70px;
+}
+
+.discover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  right: 0;
+}
+
+.menu-icon::before {
+  top: -8px;
+}
+
+.menu-icon::after {
+  top: 8px;
+}
+
+.discover-content {
+  padding: 20px;
+  text-align: center;
+  margin-top: 40%;
+}
+
+.content-title {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.content-controls {
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.control-item {
+  font-size: 1.5rem;
+}
+
+.heart {
+  margin-right: 5px;
+}

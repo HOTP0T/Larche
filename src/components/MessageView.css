@@ -1,0 +1,92 @@
+.message-view {
+  background-color: #000;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-view-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.message-view-header h2 {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.message-content {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message .timestamp {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+  display: block;
+}
+
+.received {
+  background-color: #333;
+  align-self: flex-start;
+}
+
+.sent {
+  background-color: #0084ff;
+  align-self: flex-end;
+}
+
+.message-input {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #333;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0084ff;
+  color: white;
+  cursor: pointer;
+}

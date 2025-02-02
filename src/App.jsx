@@ -1,36 +1,39 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Journal from './components/Journal';
-import Discover from './components/Discover';
-import Search from './components/Search';
-import Messages from './components/Messages';
-import MessageView from './components/MessageView';
-import Profile from './components/Profile';
-import ProfileEdit from './components/ProfileEdit';
-import Earnings from './components/Earnings';
-import './App.css';
+import React from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Journal from "./components/Journal";
+import Discover from "./components/Discover";
+import Search from "./components/Search";
+import Messages from "./components/Messages";
+import MessageView from "./components/MessageView";
+import Profile from "./components/Profile";
+import ProfileEdit from "./components/ProfileEdit";
+import Earnings from "./components/Earnings";
+import "./App.css";
 
 function App() {
   return (
-    <Router basename="/Larche">
+    <HashRouter>
       <div className="app">
         <Routes>
-          <Route path="/" element={
-            <>
-              <Header />
-              <div className="content">
-                <div className="likes">
-                  <span className="heart">♥</span>
-                  <span>10k</span>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <div className="content">
+                  <div className="likes">
+                    <span className="heart">♥</span>
+                    <span>10k</span>
+                  </div>
+                  <div className="share">
+                    <span>↗</span>
+                  </div>
                 </div>
-                <div className="share">
-                  <span>↗</span>
-                </div>
-              </div>
-            </>
-          } />
+              </>
+            }
+          />
           <Route path="/journal" element={<Journal />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/search" element={<Search />} />
@@ -42,7 +45,7 @@ function App() {
         </Routes>
         <Navbar />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
